@@ -1,10 +1,11 @@
 class Student:
-    def __init__(self, Firstname, Lastname, age, courses, pocket_money):
+    def __init__(self, Firstname, Lastname, age, courses, salary):
         self.Firstname = Firstname
         self.Lastname = Lastname
         self.age = age
         self.courses = courses
-        self.pocket_money = pocket_money
+        self.pocket_money = 0
+        self.salary = salary
         
     def get_fullname(self):
         return f"{self.Firstname} {self.Lastname}"
@@ -19,8 +20,8 @@ class Student:
         print("-" * 20)
 
 # กำหนดค่า
-student1 = Student("Alice","Borer", 20, ["Math", "English"],100)
-student2 = Student("Bob","Mokes", 22, ["Physics", "History"],500)
+student1 = Student("Alice","Borer", 20, ["Math", "English"],1000)
+student2 = Student("Bob","Mokes", 22, ["Physics", "History"],5000)
 # เรียกใช้ค่า
 student1.display_info()
 student2.display_info()
